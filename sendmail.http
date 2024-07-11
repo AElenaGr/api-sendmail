@@ -1,0 +1,49 @@
+
+### PRUEBA CORREO EXITOSO:
+POST http://localhost/api/v1/endpoint-webservice/ 
+Content-Type: application/json
+
+{
+    "name": "Andra EG",
+    "email": "andrae.tandemaranjuez@gmail.com",
+    "message":"jeliu"
+}
+
+
+### PRUEBA CORREO CON ALGUN DATO FALTANTE:
+POST http://localhost/api/v1/endpoint-webservice/ 
+Content-Type: application/json
+
+{
+    "name": "",
+    "email": "andrae.tandemaranjuez@gmail.com",
+    "message":"jeliu"
+}
+
+
+
+###  PRUEBA CORREO EMAIL ERRONEO:
+
+POST http://localhost/api/v1/endpoint-webservice/ 
+Content-Type: application/json
+
+{
+    "name": "Andra EG",
+    "email": "",
+    "message":"jeliu"
+}
+
+
+
+
+
+### PRUEBA CORREO CON TODOS LOS DATOS FALTANTES: 
+
+POST http://localhost/api/v1/endpoint-webservice/ 
+Content-Type: application/json
+
+{
+    "name": "",
+    "email": "",
+    "message":""
+}
